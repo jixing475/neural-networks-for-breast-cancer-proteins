@@ -276,8 +276,8 @@ def SMOTEdf(df,sFile,seed=0):
     Xdata, Ydata, Features = getDataFromDataFrame(df)# out var = Class
     print('\n-> Dataframe SMOTE balancing')
     print('Initial dimensions:', df.shape)
-    
-    smote = SMOTE(ratio='minority',random_state=seed)
+    #[imblearn.over_sampling.SMOTE — imbalanced-learn 0.5.0 documentation](https://imbalanced-learn.readthedocs.io/en/stable/generated/imblearn.over_sampling.SMOTE.html)
+    smote = SMOTE('minority',random_state=seed)
     X_sm, y_sm = smote.fit_sample(Xdata, Ydata)
     
     # create the resulted dataframe

@@ -17,3 +17,17 @@ This project is a collaboration from different institutions:
 All jupyter notebooks have the results. Due to the file dimension we used ZIP archives. So, before to run the codes, please unzip the files in the corresponding folder after you clone the project.
 
 Have fun with ML! @muntisa
+
+
+# edit by jixing
+
+## set env
+
+use `anaconda3/envs/vs`
+
+
+## use imbalanced-learn instead of imbalearn
+
+[imbalanced-learn API — imbalanced-learn 0.5.0 documentation](https://imbalanced-learn.readthedocs.io/en/stable/api.html)
+
+
